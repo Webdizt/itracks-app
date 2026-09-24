@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 class AppConstants {
   // ==================== BASE CONFIGURATION ====================
-  // Default sementara memakai server pengembangan lokal.
+  // Production API endpoint. Override for a local server with
+  // --dart-define=API_BASE_URL=<url>.
   static const String baseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'http://10.84.19.221:5000',
+    defaultValue: 'https://dn.seascapesurveys.com',
   );
   static const String apiVersion = 'v1';
   static const int connectTimeout = 30000; // 30 seconds
